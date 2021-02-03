@@ -22,7 +22,8 @@ class LibroTest {
 	@Test
 	void testSetCantidad() {
 		Libro ejemplo2 = new Libro("Crimen", "Dostoievsky", "Novela", 11);
-		assertEquals(11, ejemplo2.getCantidad());
+		ejemplo2.setCantidad(47);
+		assertEquals(47, ejemplo2.getCantidad());
 	}
 
 	@Test
@@ -35,7 +36,8 @@ class LibroTest {
 	void testSetTitulo() {
 		
 		Libro ejemplo2 = new Libro("Crimen", "Dostoievsky", "Novela", 10);
-		assertEquals("Crimen", ejemplo2.getTitulo());
+		ejemplo2.setTitulo("Jaula de grillos");
+		assertEquals("Jaula de grillos", ejemplo2.getTitulo());
 	}
 
 	@Test
@@ -47,7 +49,8 @@ class LibroTest {
 	@Test
 	void testSetAutor() {
 		Libro ejemplo2 = new Libro("Crimen", "Dostoievsky", "Novela", 10);
-		assertEquals("Dostoievsky", ejemplo2.getAutor());
+		ejemplo2.setAutor("Garcilaso");
+		assertEquals("Garcilaso", ejemplo2.getAutor());
 	}
 
 	@Test
@@ -59,7 +62,8 @@ class LibroTest {
 	@Test
 	void testSetTipo() {
 		Libro ejemplo2 = new Libro("Crimen", "Dostoievsky", "Novela", 10);
-		assertEquals("Novela", ejemplo2.getTipo());
+		ejemplo2.setTipo("Teatro");
+		assertEquals("Teatro", ejemplo2.getTipo());
 	}
 
 	@Test
